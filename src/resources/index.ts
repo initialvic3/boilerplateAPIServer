@@ -1,7 +1,7 @@
 import { Router } from "express";
 const rootRouter = Router();
 
-rootRouter.get("/", function(req, res) {
+rootRouter.get("/", (req, res) => {
   res.send("API Server");
 });
 
