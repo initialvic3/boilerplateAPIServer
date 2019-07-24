@@ -1,12 +1,13 @@
 {
   "scripts": {
-    "start": "node build/index.js",
+    "start": "node build/app.js",
+    "local": "ts-node src/app.ts",
     "test": "jest --maxWorkers=4 "
   },
   "engines": {
     "node": "10"
   },
-  "main": "build/index.js",
+  "main": "build/app.js",
   "dependencies": {
     "@types/cors": "^2.8.5",
     "@types/dotenv": "^6.1.1",
@@ -16,11 +17,13 @@
     "@types/uuid": "^3.4.5",
     "@types/yup": "^0.26.22",
     "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
     "escape-string-regexp": "^2.0.0",
     "express": "^4.17.1",
     "helmet": "^3.19.0",
     "http-status": "^1.3.2",
     "prettier": "^1.18.2",
+    "typescript": "^3.2.2",
     "uuid": "^3.3.2",
     "yup": "^0.27.0"
   },
@@ -28,7 +31,6 @@
     "@types/jest": "^24.0.13",
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
-    "ts-jest": "^24.0.2",
-    "typescript": "^3.2.2"
+    "ts-jest": "^24.0.2"
   }
 }
