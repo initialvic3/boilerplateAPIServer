@@ -2,6 +2,7 @@
   "scripts": {
     "start": "node build/app.js",
     "local": "ts-node src/app.ts",
+    "build": "tsc",
     "test": "jest --maxWorkers=4 "
   },
   "engines": {
